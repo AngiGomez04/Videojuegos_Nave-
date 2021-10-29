@@ -104,10 +104,11 @@ public class movJugador : MonoBehaviour
         disparoTriple = false;
     }
 
-    //Aumento de velocidad en el movimiento vertical de la nave
+    //Aumento de velocidad en el movimiento vertical  y horizontal de la nave
     public void velocidadAumentada()
     {
         velVerticalAngiGomez = 10.0f;
+        velHorizontalAngiGomez = 10.0f;
         StartCoroutine(velAumentoDesactivado());
     }
 
@@ -115,6 +116,7 @@ public class movJugador : MonoBehaviour
     {
         yield return new WaitForSeconds(10.0f);
         velVerticalAngiGomez = 4.0f;
+        velHorizontalAngiGomez = 4.0f;
     }
 
 
